@@ -29,7 +29,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     NavbarComponent,
     LoginComponent,
     HomeComponent,
-    DashboardComponent
+
   ],
   imports: [
     BrowserModule,
