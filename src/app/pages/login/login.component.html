@@ -1,0 +1,36 @@
+<div class = "bootstrap-wrapper">
+  <div class="container" style="padding-top: 1rem;">
+    <div class = "row mt20">
+      <div class = "col-md-6 offset-md-3">
+        <mat-card>
+          <mat-card-header style="padding-bottom: 16px;">
+            <div class="container img-center" >
+              <img src="https://ii.ct-stc.com/3/logos/empresas/2023/07/07/optima-cic-807CD7BFE020198E160419140thumbnail.jpg" width="100" height="100">
+            </div>
+          </mat-card-header>
+          <mat-card-content>
+
+            <form (ngSubmit) = "formSubmit()">
+              <mat-form-field class = "full-width"  appearance = "outline">
+                <mat-label>Correo electrónico</mat-label>
+                <input [(ngModel)] = "loginData.username" name = "username" required type="email" matInput placeholder="Ingrese su correo electrónico">
+
+              </mat-form-field>
+              <mat-form-field class="full-width"  appearance = "outline">
+                <mat-label>Contraseña</mat-label>
+                <input [(ngModel)] = "loginData.password" name = "password" required  type="password" matInput placeholder="Ingrese su contraseña">
+
+              </mat-form-field>
+
+              <div class = "container text-center">
+                <button type = "submit" mat-raised-button style="background-color: #ff6900; color: white;">Iniciar sesión</button>
+              </div>
+            </form>
+          </mat-card-content>
+
+
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
